@@ -12,4 +12,4 @@ Guide on how to install Ubuntu inside Termux using PRoot.
 | 🇺🇸 English | [README.en.MD](README.en.MD) |
 | 🇷🇺 Русский | [README.ru.MD](README.ru.MD) |
 | 🇪🇸 Español | [README.es.MD](README.es.MD) |
-| 🇨🇳 中文 | [README.xh.MD](README.xh.MD) |
+| 🇨🇳 中文 | [README.zh.MD](README.zh.MD) |
