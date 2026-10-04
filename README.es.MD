@@ -56,3 +56,31 @@ apt update && apt upgrade -y
 - Salir de Ubuntu: escribe `exit`.
 - Listar distribuciones soportadas: `proot-distro list`.
 - Hacer una copia de seguridad de tu Ubuntu: ejecuta en Termux: `tar -zcvf ubuntu-backup.tar.gz -C $PREFIX/var/lib/proot-distro/installed-rootfs/ubuntu .`
+
+## Preguntas frecuentes sobre Termux, Android y Ubuntu
+
+Estas preguntas responden a las principales búsquedas de Google Trends sobre **Termux**, como “termux android”, “android termux”, “termux download”, “apk termux”, “github termux”, “termux python” y “termux pc”. Consulta también la [comparación de Google Trends para Termux](https://trends.google.com/trends/explore?date=all&q=Termux).
+
+### ¿Qué es Termux Android o Android Termux?
+
+Termux es un terminal y entorno Linux para Android. Permite usar herramientas como Git, Python y SSH en el teléfono. Esta guía combina Termux con PRoot para ejecutar Ubuntu en el espacio de usuario, sin necesidad de root en el dispositivo.
+
+### ¿Dónde descargar Termux y el APK de Termux?
+
+Para descargar Termux de forma segura, utiliza el [repositorio oficial de Termux en GitHub](https://github.com/termux/termux-app) o [F-Droid](https://f-droid.org/packages/com.termux/). Son las fuentes recomendadas para el **APK Termux**. Evita sitios de terceros que prometan “termux apk download”, “download apk termux”, “download termux apk” o “termux download apk”, porque pueden distribuir archivos modificados o desactualizados. No mezcles instalaciones de fuentes diferentes.
+
+### ¿Cómo instalar Ubuntu en Termux sin root?
+
+Actualiza Termux, instala `proot-distro`, ejecuta `proot-distro install ubuntu` y entra con `proot-distro login ubuntu`. PRoot ofrece una capa de compatibilidad en el espacio de usuario; no concede acceso root real a Android.
+
+### ¿Cómo instalar Python en Termux o Ubuntu?
+
+Para **Termux Python**, ejecuta `pkg update && pkg install python -y` en Termux. Dentro de Ubuntu, utiliza `apt update && apt install python3 python3-pip -y`. El comando depende del entorno en el que quieras instalar Python.
+
+### ¿Puede Termux sustituir a un PC?
+
+La búsqueda **Termux PC** suele referirse a usar un teléfono Android como estación Linux ligera. Termux y Ubuntu mediante PRoot son útiles para programación, automatización, Git y SSH, pero no sustituyen por completo a un PC de escritorio y pueden tener limitaciones de rendimiento, permisos y acceso al hardware.
+
+### ¿Cuál es el GitHub oficial de Termux y cómo obtener la última versión?
+
+TermuxUbuntuPRoot es una guía de la comunidad. El código y las versiones oficiales de la aplicación están en [termux/termux-app en GitHub](https://github.com/termux/termux-app). Para búsquedas como **GitHub Termux**, **Termux GitHub**, **Termux Android 5** y **Termux latest version**, comprueba los requisitos actuales y las [versiones oficiales](https://github.com/termux/termux-app/releases), no un espejo de APK. También puedes ver `Termex`, `Termax`, `termux indir`, `تيرمكس` o `термукс` como variantes de búsqueda.

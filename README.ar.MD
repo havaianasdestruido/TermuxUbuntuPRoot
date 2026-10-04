@@ -56,3 +56,31 @@ apt update && apt upgrade -y
 - الخروج من أوبونتو: اكتب `exit`.
 - عرض التوزيعات المدعومة: `proot-distro list`.
 - عمل نسخة احتياطية من أوبونتو: نفّذ في Termux: `tar -zcvf ubuntu-backup.tar.gz -C $PREFIX/var/lib/proot-distro/installed-rootfs/ubuntu .`
+
+## الأسئلة الشائعة حول Termux وAndroid وUbuntu
+
+تجيب هذه الأسئلة عن عمليات البحث الرئيسية في Google Trends حول **Termux**، مثل “termux android” و“android termux” و“termux download” و“apk termux” و“github termux” و“termux python” و“termux pc”. راجع أيضًا [مقارنة Google Trends الخاصة بـ Termux](https://trends.google.com/trends/explore?date=all&q=Termux).
+
+### ما هو Termux Android أو Android Termux؟
+
+Termux هو تطبيق طرفية وبيئة Linux لنظام Android. يتيح تشغيل أدوات مثل Git وPython وSSH على الهاتف. يجمع هذا الدليل بين Termux وPRoot لتشغيل Ubuntu في مساحة المستخدم من دون الحاجة إلى صلاحيات root على الجهاز.
+
+### من أين يمكن تنزيل Termux والعثور على APK آمن؟
+
+لتنزيل **Termux download** بأمان، استخدم [المستودع الرسمي لتطبيق Termux على GitHub](https://github.com/termux/termux-app) أو [F-Droid](https://f-droid.org/packages/com.termux/). هذان هما المصدران الموصى بهما للحصول على **Termux APK**. تجنّب المواقع الخارجية التي تعرض “termux apk download” أو “download apk termux” أو “download termux apk” أو “termux download apk”، فقد تكون الملفات قديمة أو معدّلة. لا تخلط بين عمليات التثبيت من مصادر مختلفة.
+
+### كيف أثبّت Ubuntu داخل Termux من دون root؟
+
+حدّث Termux، وثبّت `proot-distro`، ثم نفّذ `proot-distro install ubuntu` وسجّل الدخول باستخدام `proot-distro login ubuntu`. يوفر PRoot طبقة توافق في مساحة المستخدم، لكنه لا يمنح صلاحيات root حقيقية لنظام Android.
+
+### كيف أثبّت Python في Termux أو Ubuntu؟
+
+لتثبيت **Termux Python**، نفّذ الأمر `pkg update && pkg install python -y` داخل Termux. وبعد الدخول إلى Ubuntu، استخدم `apt update && apt install python3 python3-pip -y`. يعتمد الأمر المناسب على البيئة التي تريد تثبيت Python فيها.
+
+### هل يمكن استخدام Termux كبديل عن الكمبيوتر؟
+
+يشير البحث عن **Termux PC** عادةً إلى استخدام هاتف Android كمحطة عمل Linux خفيفة. يفيد Termux وUbuntu عبر PRoot في البرمجة النصية والأتمتة وGit وSSH، ولكنهما لا يستبدلان الكمبيوتر المكتبي بالكامل وقد توجد قيود على الأداء والصلاحيات والوصول إلى العتاد.
+
+### ما هو GitHub الرسمي لـ Termux وكيف أحصل على أحدث إصدار؟
+
+TermuxUbuntuPRoot هو دليل من المجتمع. يوجد المصدر والإصدارات الرسمية للتطبيق في [termux/termux-app على GitHub](https://github.com/termux/termux-app). عند البحث عن **GitHub Termux** أو **Termux GitHub** أو **Termux Android 5** أو **Termux latest version**، تحقّق من المتطلبات الحالية ومن [الإصدارات الرسمية](https://github.com/termux/termux-app/releases)، وليس من مواقع APK غير رسمية. وقد تظهر أيضًا صيغ بحث مثل `تحميل` و`تيرمكس` و`تنزيل termux` و`термукс` و`termux indir`.
